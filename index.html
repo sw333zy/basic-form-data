@@ -11,17 +11,38 @@
 
       <form method='POST' action='http://requestb.in/1bvqxqe1' enctype='multipart/formdata'>
 
-        <fieldset style='width: 100px;'>
-          <legend>basic info</legend>
-            <br>
-            <table>
-              <tableheader>
-                <tr>
-                  <td>Full Name:</td>
-                  <td input type='text'></td>
-                </tr>
-              </tableheader>
-            </table>
+        <fieldset>
+
+          <legend>Basic Info</legend>
+
+          <aside>
+            <label for='username'>Full Name</label>
+            <input type='text' id='username' name='username' placeholder='Username' required>
+          </aside>
+
+          <aside>
+                <label for='Profile Pic'>Profile Pic</label>
+                <input type='file' id='Profile Pic'>
+          </aside>
+
+          <aside>
+            <label for='email'>Email</label>
+            <input type='email' id='email' name='email' placeholder='Email' required>
+          </aside>
+
+        <aside>
+         Side:
+          <input type='radio' name='side' id='light-side' value='light'>
+          <label for='light-side'>Light</label>
+          <input type='radio' name='side' id='dark-side' value='dark'>
+          <label for='dark-side'>Dark</label>
+        </aside>
+
+        <aside>
+          Origin Story
+          <textarea id='origins' name='origins'></textarea>
+        </fieldset>
+         
 
     </body>
 
