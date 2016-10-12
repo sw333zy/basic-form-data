@@ -7,8 +7,11 @@
     </head>
     <body>
 
+      <header>
       <h1>Force User Sign Up Form</h1>
+    </header>
 
+    <main>
       <form method='POST' action='http://requestb.in/1bvqxqe1' enctype='multipart/formdata'>
 
         <fieldset>
@@ -31,7 +34,7 @@
           </aside>
 
         <aside>
-         Side:
+         <p>Side:<p>
           <input type='radio' name='side' id='light-side' value='light'>
           <label for='light-side'>Light</label>
           <input type='radio' name='side' id='dark-side' value='dark'>
@@ -39,11 +42,79 @@
         </aside>
 
         <aside>
-          Origin Story
+          <p>Origin Story</p>
           <textarea id='origins' name='origins'></textarea>
+
         </fieldset>
-         
 
-    </body>
+        <fieldset>
+          <legend>Abilities</legend>
+            <aside>
+              Lightsaber Color
+              <select name='select color'>
+                <option value='color'>Blue</option>
+                <option value='color'>Red</option>
+                <option value='color'>Green</option>
+                <option value='color'>Purple</option>
+              </select>
 
-  </html>
+            <aside>
+              <p>How many objects can you levatate at once?</p>
+                  <input type='number' name='number' id='number'>
+            </aside>
+
+            <aside>
+              <label>Favorite Ability</label>
+                <input type='text' id='ability' name='ability' placeholder='Precognition' required>
+            </aside>
+
+            <aside>
+              <label>Pilot Experience</label>
+              <input type='checkbox' name='exp' id='speed-exp' value='speed'>
+              <label for='speed-exp'>Speeder</label>
+              <input type='checkbox' name='exp' id='transport-exp' value='transport'>
+              <label for='transport-exp'>Transport</label>
+              <input type='checkbox' name='exp' id='xwing-exp' value='xwing'>
+              <label for='xwing-exp'>X-Wing</label>
+              <input type='checkbox' name='exp' id='tie-fighter-exp' value='tiefighter'>
+              <label for='tie-fighter-exp'>TIE Fighter</label>
+              <input type='checkbox' name='exp' id='starship-exp' value='starship'>
+              <label for='starship-exp'>Starship</label>
+              <input type='checkbox' name='exp' id='bantha-exp' value='bantha'>
+              <label for='bantha-exp'>Bantha</label>
+            </aside>
+          </fieldset>
+
+          <fieldset>
+            <legend>Application Info</legend>
+
+            <aside>
+              <label>Desired Mentor</label>
+                <input type='text' id='mentor' name='mentor' placeholder='Yoda' required>
+            </aside>
+
+            <aside>
+              <label>Application Date</label>
+                <input type='date' id='date' name='date' placeholder='mm/dd/yyyy'>
+            </aside>
+
+            <aside>
+                <label for='password'>Application Password</label>
+                <input type='password' id='password' name='password'>
+            </aside>
+
+            <aside>
+              <p>How did you get to the dark side?</p>
+                <textarea id='how' name='how'>On my way to the dark side...</textarea>
+            </aside>
+
+            <aside>
+            <input type='reset' value='Start Over'>
+            <input type='submit' value='Send Info'>
+            </aside>
+
+          </fieldset>
+
+        </main>
+        </body>
+          <footer>&copy; 2016 The Republic</footer>
